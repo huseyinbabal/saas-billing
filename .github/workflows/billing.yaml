@@ -45,5 +45,5 @@ jobs:
           context: .
           file: k8s/billing/Dockerfile
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: ${{ env.REGISTRY }}/${{ github.repository }}/billing:${{ github.sha }}
           labels: ${{ steps.meta.outputs.labels }}
