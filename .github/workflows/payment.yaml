@@ -10,7 +10,7 @@ jobs:
 
     env:
       REGISTRY: ghcr.io
-      IMAGE_NAME: saas
+      IMAGE_NAME: huseyinbabal/payment
 
     runs-on: ubuntu-latest
     permissions:
