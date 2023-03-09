@@ -1,4 +1,4 @@
-name: CI
+name: Payment
 
 on:
   push:
@@ -13,6 +13,8 @@ jobs:
       IMAGE_NAME: saas
 
     runs-on: ubuntu-latest
+    permissions:
+      packages: write
 
     steps:
       - name: Checkout
