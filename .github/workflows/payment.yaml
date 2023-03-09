@@ -4,13 +4,13 @@ on:
   push:
     branches: ["main"]
 
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: huseyinbabal/payment
+
 
 jobs:
   build:
-
-    env:
-      REGISTRY: ghcr.io
-      IMAGE_NAME: huseyinbabal/payment
 
     runs-on: ubuntu-latest
     permissions:

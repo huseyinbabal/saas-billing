@@ -5,12 +5,12 @@ on:
     branches: ["main"]
 
 
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: huseyinbabal/billing
+
 jobs:
   build:
-
-    env:
-      REGISTRY: ghcr.io
-      IMAGE_NAME: huseyinbabal/billing
 
     runs-on: ubuntu-latest
 
