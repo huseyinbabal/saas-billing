@@ -9,6 +9,6 @@ func main() {
 	b := billing.New()
 	err := b.Run()
 	if err != nil {
-		log.Fatalf("failed to run billing. %v", err)
+		log.Fatalf("failed to run 2 billing. %v", err)
 	}
 }
